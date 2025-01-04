@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Escape</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content {
+            flex: 1;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .content1 {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .list-group-item {
+            border: none;
+        }
+
+        .list-group-item:before {
+            content: "★";
+            color: rgb(132, 132, 132);
+            margin-right: 10px;
+        }
+
+        p,
+        li {
+            font-size: 21px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        .screenshot-container {
+            background-color: #f8f9fa;
+            /* Optional: Light background for contrast */
+            padding: 15px;
+            /* Space around the image */
+            border: 1px solid #ddd;
+            /* Subtle border */
+            border-radius: 8px;
+            /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Optional: Drop shadow for depth */
+            text-align: center;
+            /* Center the content */
+        }
+
+
+
+        .screenshot {
+            width: 508px;
+            height: 255.109px;
+            display: block;
+            margin: auto;
+        }
+
+        .screenshot-container p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content1">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><strong>Alien Escape</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why-alien-escape">Why Alien Escape</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#screenshots">Screenshots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br><br><br>
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Alien Escape</h1>
+        <p class="lead">Help our brave astronaut escape from the alien planet!</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Play Now</a>
+    </header>
+    <div class="container">
+        <section id="about" class="my-5">
+            <h2>About the Game</h2>
+            <p>Alien Escape is an exciting adventure game where you play as an astronaut trying to escape from an alien
+                planet. Navigate through treacherous landscapes, solve puzzles, and avoid alien creatures to find your
+                way back to your spaceship.</p>
+        </section>
+        <section id="features" class="my-5">
+            <h2>Gameplay Features</h2>
+            <ul>
+                <li class="list-group-item">Challenging puzzles</li>
+                <li class="list-group-item">Immersive environments</li>
+                <li class="list-group-item">Exciting alien encounters</li>
+                <li class="list-group-item">Multiple levels</li>
+                <li class="list-group-item">Epic boss battles</li>
+            </ul>
+        </section>
+        <section id="why-alien-escape" class="my-5">
+            <h2>Why Play Alien Escape?</h2>
+            <ul>
+                <li class="list-group-item">Test Your Skills: Put your problem-solving abilities to the test
+                    with challenging puzzles.</li>
+                <li class="list-group-item">Thrilling Adventure: Enjoy the excitement of exploring an alien
+                    world and escaping danger.</li>
+                <li class="list-group-item">Fun for All: Suitable for players of all ages, making it a great
+                    game for family and friends.</li>
+                <li class="list-group-item">Engaging Story: Get hooked on a gripping storyline that keeps you
+                    coming back for more.</li>
+            </ul>
+        </section>
+        <h2>Screenshots</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="screenshot-container">
+                    <img src="./imgs/hmid.png" alt="Gameplay screenshot showing alien world."
+                        class="screenshot img-fluid">
+                    <p class="text-center mt-2">Alien World Screenshot</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="screenshot-container">
+                    <img src="./imgs/hmid2.png" alt="Gameplay screenshot of astronaut in action."
+                        class="screenshot img-fluid">
+                    <p class="text-center mt-2">Astronaut in Action</p>
+                </div>
+            </div>
+        </div>
+
+        </section>
+        <section id="contact" class="my-5">
+            <h2>Contact Us</h2>
+            <p>For inquiries and support, please reach out to us at <a
+                    href="mailto:support@alienescape.com">support@alienescape.com</a>.</p>
+        </section>
+    </div>
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p style="margin-bottom:-6px ;">&copy; 2025 Alien Escape. All rights reserved.</p>
+    </footer>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
